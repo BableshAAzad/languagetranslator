@@ -1,0 +1,109 @@
+.mainDivTranslator {
+    font-family: 'Poppins', sans-serif;
+    /* background-color: #600ee4; */
+    background-image: linear-gradient(to left bottom, orange, #600ee4, #600ee4, #600ee4, #600ee4, orange);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.mainDivTranslator .mainTranslatorBody {
+    /* max-width: 700px; */
+    max-width: 45rem;
+    width: 100%;
+    background: white;
+    border-radius: 10px;
+    padding: 1rem;
+    /* padding: 30px; */
+    box-shadow: 0px 10px 20px black;
+}
+
+.mainDivTranslator .mainTranslatorBody button {
+    width: 100%;
+    /* padding: 15px; */
+    padding: 0.8rem;
+    border: none;
+    outline: none;
+    color: white;
+    /* background: #600ee4; */
+    background-image: linear-gradient(to right, orange, #600ee4, orange);
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.mainDivTranslator .mainTranslatorBody .wrapper {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.mainDivTranslator .mainTranslatorBody .wrapper .text-input {
+    border-bottom: 1px solid #ccc;
+    display: flex;
+}
+
+.mainDivTranslator .mainTranslatorBody .wrapper .text-input textarea {
+    /* height: 250px; */
+    height: 17rem;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    width: 100%;
+    resize: none;
+    /* padding: 10px; */
+    padding: 0.6rem;
+    /* font-size: 18px; */
+    font-size: 1.2rem;
+    /* background-color: red;  */
+}
+
+.mainDivTranslator .mainTranslatorBody .wrapper .text-input .to-text {
+    border-left: 1px solid #ccc;
+    border-radius: 0px 10px 0px 0px;
+}
+
+.mainDivTranslator .mainTranslatorBody .wrapper .controls,
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.mainDivTranslator .mainTranslatorBody .wrapper .controls li select {
+    border: none;
+    outline: none;
+    /* font-size: 18px; */
+    font-size: 1.2rem;
+    /* padding: 18px; */
+    padding: 1rem;
+    /* margin: 0px 20px 0px 15px; */
+    margin: 0rem 2rem 0rem 1rem;
+}
+
+.mainDivTranslator .mainTranslatorBody .wrapper .controls .row .icons i {
+    width: 2.4rem;
+    /* font-size: 18px; */
+    font-size: 1.3rem;
+    /* color: #b7b7b7; */
+    color: #398d89;
+    justify-content: center;
+}
+
+.mainDivTranslator .mainTranslatorBody .wrapper .controls .row.from .icons i {
+    /* padding-right: 15px; */
+    /* margin-left: 10px; */
+    margin-left: 1rem;
+    /* padding-left: 5px; */
+    border-right: 1px solid #ccc;
+}
+
+.mainDivTranslator .mainTranslatorBody .wrapper .controls .row.to .icons i {
+    /* padding-left: 15px; */
+    padding-left: 1rem;
+    /* margin-right: 10px; */
+    margin-right: 1rem;
+    border-left: 1px solid #ccc;
+}
