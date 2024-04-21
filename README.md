@@ -1,3 +1,10 @@
+# Language Translator app (Bableshaazad.com)
+ - Using react+vite app 
+ and using api : https://api.mymemory.translated.net/get?q=Hello World!&langpair=en|it
+ for translating languages
+
+ <img src="/src/imgDemo/home.PNG" alt="no pic" />
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
