@@ -1,6 +1,6 @@
 ## 🚗👨‍🎓🏠 Language Translator Web Application [BableshAAzad.com](https://www.bableshaazad.com)
 
-This application allows you to translate any language into another language. It is built using the `ReactJS+Vite` framework and leverages the `api.mymemory.translated.net` API for translations.
+This application allows you to translate any language into another language. It is built using the `ReactJS+Vite` framework and leverages the [api.mymemory.translated.net](https://mymemory.translated.net/doc/spec.php) API for translations.
 
 ---
 
