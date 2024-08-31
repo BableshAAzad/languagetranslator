@@ -30,6 +30,6 @@ This application allows you to translate any language into another language. It 
 
 - Check Your Application : [http://localhost:5173/](http://localhost:5173/)
 <p align="center">
-  <img src="./project_images/home.png" alt="home" width="90%"/>
+  <img src="./project_images/home.jpeg" alt="home" width="90%"/>
 </p>
 
