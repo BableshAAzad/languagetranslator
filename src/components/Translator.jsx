@@ -1,8 +1,9 @@
 import "./Translator.css"
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import lang from "./languages"
 
-function Translator() {
+// eslint-disable-next-line react/prop-types
+function Translator({ setProgress }) {
     let [fromText, setFromText] = useState("");
     let [toText, setToText] = useState("");
     let [fromLanguage, setFromLanguage] = useState("en-GB");
@@ -54,15 +55,24 @@ function Translator() {
         }
     }
     let handleTranslate = () => {
+        setProgress(30)
         setLoading(true);
-        // https://api.mymemory.translated.net/get?q=Hello World!&langpair=en|it
-        let url = `https://api.mymemory.translated.net/get?q=${fromText}&langpair=${fromLanguage}|${toLanguage}`;
-        fetch(url)
-            .then((res) => res.json())
-            .then((data) => {
-                setToText(data.responseData.translatedText)
-                setLoading(false);
-            })
+        try {
+            setProgress(70)
+            // https://api.mymemory.translated.net/get?q=Hello World!&langpair=en|it
+            let url = `https://api.mymemory.translated.net/get?q=${fromText}&langpair=${fromLanguage}|${toLanguage}`;
+            fetch(url)
+                .then((res) => res.json())
+                .then((data) => {
+                    setToText(data.responseData.translatedText)
+                })
+            setProgress(90)
+        } catch (error) {
+            console.log(error)
+        } finally {
+            setLoading(false);
+            setProgress(100)
+        }
     }
     return (
         <>
